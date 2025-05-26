@@ -1,0 +1,33 @@
+{
+    "name": "Neovim",
+    "id": "nvim",
+    "version": "0.0.1",
+    "description": "A feature to install Neovim building from source",
+    "options": {
+        "nvimCloneConfig": {
+            "type": "boolean",
+            "default": true,
+            "description": "Flag if should clone neovim configuration repo"
+        },
+        "nvimConfigRepo": {
+            "type": "string",
+            "default": "https://github.com/Diogo364/my-nvim.git",
+            "description": "URL to neovim configuration"
+        },
+        "nvimConfigBranch": {
+            "type": "string",
+            "default": "lean",
+            "description": "Branch to fetch neovim configuration"
+        },
+        "home": {
+            "type": "string",
+            "default": "/root",
+            "description": "User HOME path"
+        },
+        "nvimInstaller": {
+            "type": "string",
+            "default": "https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.tar.gz",
+            "description": "Link to tar.gz neovim installer."
+        }
+    }
+}

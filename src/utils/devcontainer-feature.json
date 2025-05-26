@@ -1,0 +1,33 @@
+{
+    "name": "My custom utils",
+    "id": "utils",
+    "version": "0.0.1",
+    "description": "This installs all my custom utils for my workflow",
+    "options": {
+        "upgradePackages": {
+            "type": "boolean",
+            "default": true,
+            "description": "Upgrade OS packages?"
+        },
+        "installFD": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Ripgrep?"
+        },
+        "installRG": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Ripgrep?"
+        },
+        "installNPM": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install npm?"
+        },
+        "installTMUX": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install tmux?"
+        }
+    }
+}

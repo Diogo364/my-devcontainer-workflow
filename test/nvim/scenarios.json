@@ -1,0 +1,27 @@
+{
+    "nvim_v11": {
+        "image": "ubuntu",
+        "features": {
+            "nvim": {
+                "nvimInstaller": "https://github.com/neovim/neovim/releases/download/v0.11.1/nvim-linux-x86_64.tar.gz",
+                "nvimCloneConfig": "false"
+            }
+        }
+    },
+    "nvim_config_main": {
+        "image": "ubuntu",
+        "features": {
+            "nvim": {
+                "nvimConfigBranch": "main"
+            }
+        }
+    },
+    "nvim_custom_home": {
+        "image": "ubuntu",
+        "features": {
+            "nvim": {
+                "home": "/custom"
+            }
+        }
+    }
+}
