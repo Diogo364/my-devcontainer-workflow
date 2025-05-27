@@ -18,7 +18,6 @@ This installs all my custom utils for my workflow
 | upgradePackages | Upgrade OS packages? | boolean | true |
 | installFD | Install Ripgrep? | boolean | true |
 | installRG | Install Ripgrep? | boolean | true |
-| installNPM | Install npm? | boolean | true |
 | installTMUX | Install tmux? | boolean | true |
 
 
