@@ -13,8 +13,6 @@ check "fd installed?" fd --version
 
 check "rg installed?" rg --version
 
-check "npm installed?" npm -v
-
 check "tmux installed?" tmux -V
 
 reportResults

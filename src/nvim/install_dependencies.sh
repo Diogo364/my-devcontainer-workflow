@@ -2,16 +2,27 @@
 
 package_list="${package_list} \
 sudo \
+luarocks \
+imagemagick \
+libmagickwand-dev \
 git \
 curl \
 wget \
 tar \
 python3-venv \
+python3-neovim \
+python3-dev \
+python3-pip \
 build-essential"
 
 # Debian / Ubuntu dependencies
 install_debian_dependencies() {
     export DEBIAN_FRONTEND=noninteractive
+    if ! command -v npm; then
+        package_list="${package_list} \
+nodejs \
+npm"
+    fi
 
     rm -rf /var/lib/apt/lists/*
     apt-get update -y

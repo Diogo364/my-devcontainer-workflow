@@ -19,11 +19,6 @@
             "default": true,
             "description": "Install Ripgrep?"
         },
-        "installNPM": {
-            "type": "boolean",
-            "default": true,
-            "description": "Install npm?"
-        },
         "installTMUX": {
             "type": "boolean",
             "default": true,

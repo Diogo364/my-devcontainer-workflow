@@ -14,7 +14,6 @@ set -e
 export UPGRADE_PACKAGES="${UPGRADEPACKAGES:-"true"}"
 export INSTALL_FD="${INSTALLFD:-"true"}"
 export INSTALL_RG="${INSTALLRG:-"true"}"
-export INSTALL_NPM="${INSTALLNPM:-"true"}"
 export INSTALL_TMUX="${INSTALLTMUX:-"true"}"
 
 

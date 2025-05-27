@@ -75,13 +75,6 @@ if [[ ${INSTALL_RG} = "true" ]]; then
 fi
 echo -e "INSTALL_RG=${INSTALL_RG}\n" >> "${MARKER_FILE}"
 
-if [[ ${INSTALL_NPM} = "true" ]]; then
-    apt install -y nodejs
-    apt install -y npm
-fi
-echo -e "INSTALL_NPM=${INSTALL_NPM}\n" >> "${MARKER_FILE}"
-
-
 if [[ ${INSTALL_TMUX} = "true" ]]; then
     apt install -y tmux
 
