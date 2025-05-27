@@ -1,7 +1,7 @@
 {
     "name": "My custom utils",
     "id": "utils",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "This installs all my custom utils for my workflow",
     "options": {
         "upgradePackages": {
