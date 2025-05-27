@@ -1,43 +1,28 @@
-# 🧩 Custom Utils DevContainer Feature
 
-This [DevContainer Feature](https://containers.dev/implementors/features/) installs a set of common development utilities and optionally configures a non-root user, making your development environment ready-to-go for a variety of workflows.
+# My custom utils (utils)
 
-## 🔧 What It Does
+This installs all my custom utils for my workflow
 
-- Optionally upgrades system packages (`apt upgrade`)
-- Installs useful CLI tools like `fd`, `ripgrep`, `tmux`, and `npm`
-- Creates a non-root user with configurable UID/GID
-
-## 🛠️ Options
-
-| Option            | Type    | Default        | Description                                                                     |
-| ----------------- | ------- | -------------- | ------------------------------------------------------------------------------- |
-| `upgradePackages` | boolean | `true`         | Whether to upgrade all OS packages (`apt upgrade`).                             |
-| `username`        | string  | `devcontainer` | Name of the non-root user to create. Use `"none"` to skip user creation.        |
-| `userUid`         | string  | `1001`         | UID for the non-root user.                                                      |
-| `userGid`         | string  | `1001`         | GID for the non-root user.                                                      |
-| `installFD`       | boolean | `true`         | Install [`fd`](https://github.com/sharkdp/fd), a simple, fast file finder.      |
-| `installRG`       | boolean | `true`         | Install [`ripgrep`](https://github.com/BurntSushi/ripgrep), a line search tool. |
-| `installNPM`      | boolean | `true`         | Install Node.js and `npm`.                                                      |
-| `installTMUX`     | boolean | `true`         | Install [`tmux`](https://github.com/tmux/tmux), a terminal multiplexer.         |
-
-## 🚀 Example Usage
-
-Include this feature in your `.devcontainer/devcontainer.json`:
+## Example Usage
 
 ```json
-{
-  "features": {
-    "ghcr.io/your-org-or-username/custom-devcontainer-features/utils:latest": {
-      "upgradePackages": true,
-      "username": "devcontainer",
-      "userUid": "1001",
-      "userGid": "1001",
-      "installFD": true,
-      "installRG": true,
-      "installNPM": true,
-      "installTMUX": true
-    }
-  }
+"features": {
+    "ghcr.io/Diogo364/my-devcontainer-workflow/utils:0": {}
 }
 ```
+
+## Options
+
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| upgradePackages | Upgrade OS packages? | boolean | true |
+| installFD | Install Ripgrep? | boolean | true |
+| installRG | Install Ripgrep? | boolean | true |
+| installNPM | Install npm? | boolean | true |
+| installTMUX | Install tmux? | boolean | true |
+
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/Diogo364/my-devcontainer-workflow/blob/main/src/utils/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
